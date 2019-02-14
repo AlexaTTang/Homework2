@@ -20,6 +20,7 @@ int main()
 	float mWTax = mealCost + (mealCost*taxPercent);
 	float totalBill = mWTax + (mWTax * tipPercent);
 	printf("Total bill is $%.2f", totalBill);
+	printf("\n");
 
 	//Ocean Levels
 	float rate = 1.5;
@@ -30,11 +31,22 @@ int main()
 	printf("Number of millimeters higher that the current ocean's level will be in 5 years: %.1f\n", five);
 	printf("Number of millimeters higher that the current ocean's level will be in 5 years: %.1f\n", seven);
 	printf("Number of millimeters higher that the current ocean's level will be in 5 years: %.1f\n", ten);
+	printf("\n");
 
-	//
-
-		return 0;
-
+	//Stock Transaction
+	float shares = 1000.0;
+	float shareCost = 45.50;
+	float commision = 0.02;
+	float shareSale = 56.90;
+	float stockC = (shares*shareCost);
+	float stockCommision = stockC*commision;
+	float stockCostTotal = (shares*shareCost) + (shares*shareCost)*commision;
+	float stockSoldTotal = (shares*shareSale) + (shares*shareSale)*commision;
+	float stockProfit = stockSoldTotal - stockCostTotal;
+	printf("The Joe paid for the stock: $%.2f\n", stockC);
+	printf("The amount of commision Joe paid for the stocks: $%.2f", stockCommision);
+	printf("The total amount Joe recieved for the stock: $%.2f\n", stockSoldTotal);
+	printf("The profit Joe made: $%.2f", stockProfit);
 	return 0;
 
 }
