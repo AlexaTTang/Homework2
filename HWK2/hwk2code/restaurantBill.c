@@ -8,6 +8,7 @@
 
 int main()
 {
+
 	//Restaurant Bill
 	float mealCost = 88.67;
 	float taxPercent = 0.0675;
@@ -47,6 +48,8 @@ int main()
 	printf("The amount of commision Joe paid for the stocks: $%.2f", stockCommision);
 	printf("The total amount Joe recieved for the stock: $%.2f\n", stockSoldTotal);
 	printf("The profit Joe made: $%.2f", stockProfit);
+	printf("\n");
+
 	return 0;
 
 }
