@@ -10,6 +10,7 @@ int main()
 {
 
 	//Restaurant Bill
+	printf("Retaurant Bill");
 	float mealCost = 88.67;
 	float taxPercent = 0.0675;
 	float tipPercent = 0.2;
@@ -24,6 +25,7 @@ int main()
 	printf("\n");
 
 	//Ocean Levels
+	printf("Ocean Levels");
 	float rate = 1.5;
 	float five = rate*5.0;
 	float seven = rate * 7.0;
@@ -35,6 +37,7 @@ int main()
 	printf("\n");
 
 	//Stock Transaction
+	printf("Stock Trading Program Bill");
 	float shares = 1000.0;
 	float shareCost = 45.50;
 	float commision = 0.02;
@@ -49,6 +52,33 @@ int main()
 	printf("The total amount Joe recieved for the stock: $%.2f\n", stockSoldTotal);
 	printf("The profit Joe made: $%.2f", stockProfit);
 	printf("\n");
+
+	//Triangle
+	printf("Pattern Displays");
+	int rows = 10;
+	int i;
+	int j;
+	//pattern A
+	for (i = 1; i <= rows; ++i)
+	{
+		for(j = 1; j <= i; ++j)
+		{
+			printf("* ");
+		}
+		printf("\n");
+	}
+
+  printf("\n");
+
+	//pattern B
+	for (i = rows; i >=1; --i)
+	{
+		for (j = 1; j <= i; ++j)
+		{
+			printf("* ");
+		}
+		printf("\n");
+	}
 
 	return 0;
 
